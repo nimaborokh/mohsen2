@@ -40,7 +40,7 @@
                     : تاریخ
                 </label>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 order-3">
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 order-3">
                 <span class="logo"
                     ><svg
                         fill
@@ -151,7 +151,9 @@
                             type="number"
                             required
                             placeholder="...کدملی خود را وارد کنید"
-                            pattern="[0-9]"
+                            pattern="[0-9]{10}"
+                            onKeyPress="if(this.value.length==10) return false;"
+                            required title="5 to 8 characters"
                         />
                         : کد ملی
                     </label>
@@ -209,6 +211,7 @@
                 </div>
             </form>
         </div>
+        <button; class="butten" type="submit"></button>
 
         <script
             defer
